@@ -1,0 +1,122 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale 1.0">
+    <title>CONTACTO</title>
+    <link rel="stylesheet" type="text/css" href="stycont.css">
+    <link rel="stylesheet" type="text/css" href="navbar.css">
+    <link rel="stylesheet" type="text/css" href="contact.css">
+ 
+</head> 
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Universidad.html">UNIVERSIDAD 2024</a></li>
+                <li><a href="Contrato.html">CONTRATACIONES 2024</a></li>
+                <li><a href="Directorio.html">DIRECTORIO</a></li>
+                <li><a href="index.html">INICIO</a></li>
+            </ul>
+        </nav>
+    </header> <br><br><br><br> 
+    <div class="logo" style="padding-bottom: 0px; padding-top: 0px;padding-bottom: 0px; border: 1;">
+        <img all="logo.jpg" width="350px" src="img/logo.png"> 
+    </div>
+            <br>
+
+
+  
+        <form action="conexion.php" method="post">
+        
+            <div class="contact_form" style="margin-top: 0px;">
+
+            <div class="formulario">			
+          <h1>Formulario de contacto</h1>
+                    <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+    
+    
+                        <form action="submeter-formulario.php" method="post">				
+    
+                            
+                                    <p>
+                                        <label for="nombre" class="colocar_nombre">Nombre
+                                            <span class="obligatorio">*</span>
+                                        </label>
+                                            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                                    </p>
+                                
+                                    <p>
+                                        <label for="email" class="colocar_email">Email
+                                            <span class="obligatorio">*</span>
+                                        </label>
+                                            <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                                    </p>
+                            
+                                    <p>
+                                        <label for="telefone" class="colocar_telefono">Teléfono
+                                        </label>
+                                            <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                                    </p>		
+                                
+                                    <p>
+                                        <label for="website" class="colocar_website">Sitio web
+                                        </label>
+                                            <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
+                                    </p>		
+                                
+                                    <p>
+                                        <label for="asunto" class="colocar_asunto">Asunto
+                                            <span class="obligatorio">*</span>
+                                        </label>
+                                            <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                                    </p>		
+                                
+                                    <p>
+                                        <label for="mensaje" class="colocar_mensaje">Mensaje
+                                            <span class="obligatorio">*</span>
+                                        </label>                     
+                                             <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                       </p>	  								
+                                
+                                    <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+    
+                                    <p class="aviso">
+                                        <span class="obligatorio"> * </span>Los campos son obligatorios.
+                                    </p>					
+                            
+                        </form>
+            </div>	
+        </div>
+    </form>
+
+        
+        
+    </form>
+    <footer> 
+        <p id="fecha-actualizacion"></p>
+        <a href="https://www.gob.mx/semar">SeGob</a> 
+        <a href="https://www.facebook.com/SEMARMX/?locale=es_LA">Facebook</a>  
+        <a href="https://x.com/semar_mx">X</a>  
+        <a href="https://www.instagram.com/SEMAR_mx/?locale=en-SG">Instagram</a> 
+    </footer>
+      
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          var fecha = new Date();
+          var ano = fecha.getFullYear();
+          var mes = fecha.getMonth() + 1;
+          var dia = fecha.getDate();
+          var fechaActual = dia + '/' + mes + '/' + ano;
+          var elementoFecha = document.getElementById("fecha-actualizacion");
+          elementoFecha.innerHTML = 'Última actualización: ' + fechaActual;
+        });
+      </script>
+
+   
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale 5.0">
+    <title>DIRECTORIO</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="navbar.css">
+ 
+</head> 
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li> <a href="Contacto.html">CONTACTO</a> </li>
+                <li> <a href="Universidad.html">UNIVERSIDAD 2024</a> </li>
+                <li> <a href="Contrato.html">CONTRATACIONES 2024</a> </li>
+                <li> <a href="index.html">INICIO</a> </li>
+            </ul>
+        </nav>
+    </header> <br><br><br><br><br>
+    <div class="logo" style="padding-bottom: 0px; padding-top: 0px;">
+        <img all="logo.jpg" width="350px" src="img/logo.png"> 
+    </div>
+
+    <br>
+    <br>
+    
+    <table class="directo" align="center">
+       
+        <tr>
+            <td><img src="img/jr.jpg" alt="Secretaria"></td>
+            <th> <a href="https://www.gob.mx/semar/estructuras/almirante-jose-rafael-ojeda-duran-183759">Almirante Jose Rafael Ojeda Duran</a><br> <strong><h4>Secretario de Marina</a></h4></strong></th>
+        
+            <td><img src="img/jc.jpg" alt=""></td>
+            <th> <a href="https://www.gob.mx/semar/estructuras/almirante-julio-cesar-pescina-avila">Almirante Julio Cesar Pescina Avila</a><br><strong><h4>Subsecretario de Marina</h4></strong></th>
+        </tr>
+        <tr>
+            <td><img src="img/cc.jpg" alt=""></td>
+            <th><a href="https://www.gob.mx/semar/estructuras/almirante-cesar-carlos-preciado-velazquez">Almirante Cesar Carlos Preciado Velazquez</a><br><strong><h4>Oficial Mayor de Marina</h4></strong></th>
+
+            <td><img src="img/ah.jpg" alt=""></td>
+            <th><a href="https://www.gob.mx/semar/estructuras/almirante-alfredo-hernandez-suarez">Almirante Alfredo Hernandez Suarez</a><br><strong><h4>Jefe de Estado Mayor General de la Armada</h4></strong></th>
+        </tr>
+        <tr>
+            <td><img src="img/Lobato.jpg" alt=""></td>
+            <th><a href="https://www.gob.mx/semar/estructuras/vicealmirante-ramiro-lobato-camacho">Vicealmirante Ramiro Lobato Camacho</a><br><strong><h4>Inspector y Contralor General de Marina Interino</h4></strong></th>
+
+            <td><img src="img/Altura.jpg" alt=""></td>
+            <th><a href="https://www.gob.mx/semar/estructuras/capitan-de-altura-manuel-fernando-gutierrez-gallardo-363713">Capitan de Altura Manuel Fernando Gutierrez Gallardo</a><br><strong><h4>Coordinador General de Puertos y Marina Mercante</h4></strong></th>
+        </tr>
+
+    </table>
+    <br><br><br><br><br>
+    
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+ <footer> 
+        <p id="fecha-actualizacion"></p>
+        <a href="https://www.gob.mx/semar">SeGob</a> 
+        <a href="https://www.facebook.com/SEMARMX/?locale=es_LA">Facebook</a>  
+        <a href="https://x.com/semar_mx">X</a>  
+        <a href="https://www.instagram.com/SEMAR_mx/?locale=en-SG">Instagram</a> 
+    </footer>
+      
+ <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          var fecha = new Date();
+          var ano = fecha.getFullYear();
+          var mes = fecha.getMonth() + 1;
+          var dia = fecha.getDate();
+          var fechaActual = dia + '/' + mes + '/' + ano;
+          var elementoFecha = document.getElementById("fecha-actualizacion");
+          elementoFecha.innerHTML = 'Última actualización: ' + fechaActual;
+        });
+     </script>
+
+   
+</body>
+</html>

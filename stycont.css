@@ -1,0 +1,164 @@
+
+  
+  
+    
+    /***************** PIE DE PAGINA *********/
+    footer {
+        min-height: 70px;
+        position: relative;
+        left:0px;
+        bottom: 0px;
+        height: 70px;
+        width: 100%;
+        background: #999;
+        clear: both;
+        margin-top: 0px;
+        padding-top: 0px;
+        overflow: visible;
+      }
+  
+      .footer{
+        border-top: 1px solid #222;
+      }
+  
+      .post-footer{
+        width: 300px;
+        margin: 0 auto;
+      }
+  
+     
+
+  
+  
+        .T1{
+          text-align: right;
+          color:black;
+        }
+  
+        .P1{
+          text-align: right;
+        }
+  
+        .logo{
+          text-align: right;
+          top: auto;
+          padding: 10px;
+        }
+  
+        .Buscar{
+          text-align: right;
+        }
+  
+        * {
+          font-family: Arial, helvetica, sans-serif;
+        }
+        .fila {
+          display: flex;
+        }
+        .bloque {
+          display: block;
+          width: 600px;
+          padding: 2cm;
+        }
+          .bloque-img {
+            position: relative;
+            top: 40px;
+            left: 40px;
+            text-align: left;
+            width: 10ch;
+            /* min-width: 40ch; */
+            height: 200px;
+            background-color: #ccc;
+        }
+          
+        .bloque-contenidos {
+          /*padding: 10px;*/
+          text-align: justify;
+          position: relative;
+          top: 40px; left: 30px;
+          background-color: rgb(79, 144, 218);
+          font-size: 16px;
+          line-height: 16px;
+        }
+        
+        
+        h2 {
+          margin-top: 0px;
+          margin-bottom: 0px;
+          text-align: center;
+      }
+  
+        * {
+          font-family: Arial, helvetica, sans-serif;
+      }
+  
+   
+    h4{
+      font-style: italic;
+      color: rgb(7, 10, 192);
+      font-size: 20px;
+    }
+  
+    .contratar{
+      
+      color: rgb(58, 103, 228);
+      font-size: 60px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+  
+    .mili{
+      color: rgb(25, 128, 144);
+      font-size: 40px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+  
+    .t2{
+      color: purple;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 40px;
+    }
+    .nt2:hover{
+      text-align: right;
+      border: 5px dotted red;
+      -webkit-transform: scale(0.5) ;
+      transform: scale(1);
+      overflow: hidden;
+    }
+  
+  .site1{
+    border-radius: 5px;
+    padding: 10px 7px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    margin: 10px;
+  }
+  
+  .tab1{
+    padding-top: 0;
+    padding-block-end: 20px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: brown;
+  }
+
+  
+  
+   
+  
+  
+   
+  
+  
+  
+  
+  
+        
+  
+        
+       
+        
+  
+  
+  
+  
