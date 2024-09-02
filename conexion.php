@@ -26,7 +26,7 @@ else
         echo"<b><h3>Conexion exitosa</h3></b>";
     }
 //*Codigo para indicar la direccion a la base de datos. 
-    $datab = "comer";
+    $datab = "conexion";
     $db =mysqli_select_db($conexion, $datab);
 
     if (!$db)
