@@ -2,7 +2,7 @@
     $server="localhost";
     $user="root"; 
     $pass ="";
-    $db="comer";
+    $db="conexion";
 
 $conexion = mysqli_connect($server, $user, $pass, $db);
 
@@ -51,15 +51,15 @@ if (!$result)
 }
 
 echo "<table>";
-echo "<tr>";
-echo "<th><h1>id</th></h1";
-echo "<th><h1>Nombre</th></h1";
-echo "<th><h1>email</th></h1";
-echo "<th><h1>telefono</th></h1";
-echo "<th><h1>website</th></h1";
-echo "<th><h1>asunto</th></h1";
-echo "<th><h1>mensaje</th></h1";
-echo "<tr>";
+    echo "<tr>";
+    echo "<th><h1>id</th></h1";
+    echo "<th><h1>Nombre</th></h1";
+    echo "<th><h1>email</th></h1";
+    echo "<th><h1>telefono</th></h1";
+    echo "<th><h1>website</th></h1";
+    echo "<th><h1>asunto</th></h1";
+    echo "<th><h1>mensaje</th></h1";
+    echo "<tr>";
 
 while ($colum =mysqli_fetch_array($result))
 {
