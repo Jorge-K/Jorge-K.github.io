@@ -1,10 +1,15 @@
 <?php
+
     $hostname="localhost";
-    $username="root"; 
+    $username="root";
     $password ="";
     $database="comer";
 
-$conexion = mysqli_connect($hostname, $username, $password, $database);
+$conexion= new mysqli("localhost", "root", "", "comer");
+$result= $mysqli->query('comer()');
+
+
+//*$conexion = mysqli_real_connect($hostname, $username, $password, $database);
 
 //*llamado a los input del formulario. 
 $nombre = $_POST["nombre"];
@@ -27,7 +32,7 @@ else
     }
 //*Codigo para indicar la direccion a la base de datos. 
     $datab = "comer";
-    $database =mysqli_select_db($conexion, $datab);
+    $database =mysqli_select_db($connexion, $datab);
 
     if (!$database)
     {
@@ -40,7 +45,7 @@ else
     $instruccion_SQL = "INSERT INTO tabla (nombre, email, telefono, website, asunto, mensaje)
     VALUES ('$nombre', '$email', '$telefono', '$website', '$asunto', '$mensaje')";
 
-    $resultado = mysqli_query($conexion,$instruccion_SQL);
+    $resultado = mysqli_query($conexion, $instruccion_SQL);
 
     $consulta = "SELECT * FROM tabla";
 
