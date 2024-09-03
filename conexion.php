@@ -1,10 +1,10 @@
 <?php
-    $server="localhost";
-    $user="root"; 
-    $pass ="";
-    $db="comer";
+    $hostname="localhost";
+    $username="root"; 
+    $password ="";
+    $database="comer";
 
-$conexion = mysqli_connect($server, $user, $pass, $db);
+$conexion = mysqli_connect($hostname, $username, $password, $database);
 
 //*llamado a los input del formulario. 
 $nombre = $_POST["nombre"];
@@ -27,9 +27,9 @@ else
     }
 //*Codigo para indicar la direccion a la base de datos. 
     $datab = "comer";
-    $db =mysqli_select_db($conexion, $datab);
+    $database =mysqli_select_db($conexion, $datab);
 
-    if (!$db)
+    if (!$database)
     {
         echo"No se ha encontrado la tabla";
     }
@@ -53,7 +53,7 @@ if (!$result)
 echo "<table>";
     echo "<tr>";
     echo "<th><h1>id</th></h1";
-    echo "<th><h1>Nombre</th></h1";
+    echo "<th><h1>nombre</th></h1";
     echo "<th><h1>email</th></h1";
     echo "<th><h1>telefono</th></h1";
     echo "<th><h1>website</th></h1";
@@ -77,6 +77,3 @@ echo "</table>";
 
 mysqli_close ($conexion);
 echo'<a href="index.html"> Volver Atras</a>';
-
-
-
