@@ -3,10 +3,10 @@
     $hostname="localhost";
     $username="root";
     $password ="";
-    $database="comer";
+    $database="comercial";
 
 $conexion= new mysqli("localhost", "root", "", "comer");
-$result= $mysqli->query('comer()');
+$result= $mysqli->query('comercial()');
 
 
 //*$conexion = mysqli_real_connect($hostname, $username, $password, $database);

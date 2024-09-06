@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width">
     <title>CONTACTO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="stycont.css">
     <link rel="stylesheet" type="text/css" href="navbar.css">
     <link rel="stylesheet" type="text/css" href="contact.css">
@@ -41,33 +42,37 @@
                     <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
     
     
-                    <form action="conexion.php" name="comer" method="post">
+                    <form action="conexion.php" name="comercial" method="post" autocomplete="off">
     
                             
                                     <p>
                                         <label for="nombre" class="colocar_nombre">Nombre
                                             <span class="obligatorio">*</span>
                                         </label>
-                                            <input type="text" name="nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                                            <input type="nombre" name="nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                                            <i class= "fa-solid fa-users" ></i>
                                     </p>
                                 
                                     <p>
-                                        <label for="email" class="colocar_email">Email
+                                        <label for="email" class="colocar_email">e-mail
                                             <span class="obligatorio">*</span>
                                         </label>
                                             <input type="email" name="email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                                             <i class= "fa-solid fa-envelope" ></i>
                                     </p>
                             
                                     <p>
                                         <label for="telefono" class="colocar_telefono">Teléfono
                                         </label>
-                                            <input type="tel" name="telefono" id="telefono" placeholder="Escribe tu teléfono">
+                                            <input type="tel" name="phone" id="telefono" placeholder="Escribe tu teléfono">
+                                            <i class= "fa-solid fa-phone" ></i>
                                     </p>		
                                 
                                     <p>
-                                        <label for="website" class="colocar_website">Sitio web
+                                        <label for="website" class="colocar_website">Sitio Web
                                         </label>
                                             <input type="url" name="website" id="website" placeholder="Escribe la URL de tu web">
+                                            <i class= "fa-solid fa-cloud" ></i>
                                     </p>		
                                 
                                     <p>
@@ -75,14 +80,16 @@
                                             <span class="obligatorio">*</span>
                                         </label>
                                             <input type="text" name="asunto" id="asunto" required="obligatorio" placeholder="Escribe un asunto">
-                                    </p>		
-                                
+                                            <i class= "fa-solid fa-comment" ></i>
+                                        </p>	
+
                                     <p>
                                         <label for="mensaje" class="colocar_mensaje">Mensaje
                                             <span class="obligatorio">*</span>
                                         </label>                     
                                              <textarea name="mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
-                                       </p>	  								
+                                             <i class= "fa-solid fa-message" ></i>
+                                            </p>	  								
                                 
                                     <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
     
